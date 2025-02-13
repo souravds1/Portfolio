@@ -1,3 +1,22 @@
-MD simulation using LAMMPS to understand Methane decomposition under the presence of Nickel Catalyst
+Subject: Computational Material Science
+Project: **Reactive dynamics simulations of thermal decomposition of Methane to synthesize Graphene and Hydrogen gas**
 
-Reactive dynamics simulations of thermal decomposition of Methane to synthesize Graphene and Hydrogen gas
+**Project_Overview**
+
+This project investigates the thermal decomposition of methane into graphene and hydrogen gas using reactive molecular dynamics (ReaxFF) simulations.
+
+Key Topics:-
+
+a) Carbon nanomaterial synthesis
+
+b) Methane pyrolysis mechanisms
+
+c) Hydrogen production efficiency
+
+Tools & Techniques:-
+
+a) LAMMPS (Reactive MD simulations)
+
+b) ReaxFF force field parameters
+
+c) Graphene growth analysis
