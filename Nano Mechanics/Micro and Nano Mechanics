@@ -1,3 +1,21 @@
-This Folder Contain Project report for Micro Nano Mechanics
-Project: Modeling & Simulation of Li-ion batteries using Doylar-Fuller-Newman (DFN) 
-Model
+**Micro & Nano Mechanics: Li-ion Battery Modeling (Doyle-Fuller-Newman Model)**
+
+Project Overview
+
+A computational study using the Doyle-Fuller-Newman (DFN) model to analyze the electrochemical behavior of lithium-ion batteries under different operating conditions.
+
+Key Topics:-
+
+a) Multi-scale battery modeling
+
+b) Electrochemical performance analysis
+
+c) Charge-discharge cycle simulation
+
+Tools & Techniques:-
+
+a) MATLAB/COMSOL simulations
+
+b) PDE-based modeling
+
+c) Electrochemical parameter optimization
