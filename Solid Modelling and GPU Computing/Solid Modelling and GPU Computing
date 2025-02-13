@@ -1,1 +1,21 @@
-Simulation of 2D Heat Transfer Model Using CUDA Transfer Model Using CUDA
+**Solid Modeling & GPU Computing: 2D Heat Transfer Simulation Using CUDA**
+
+Project Overview:-
+
+An accelerated simulation of 2D heat transfer using GPU-accelerated computing with CUDA.
+
+Key Topics:-
+
+a) Parallel computing in thermal simulations
+
+b) CUDA-based numerical methods
+
+c) Efficiency comparison with CPU-based models
+
+Tools & Techniques:-
+
+a) NVIDIA CUDA programming
+
+b) Finite difference method (FDM)
+
+c) High-performance computing (HPC)
