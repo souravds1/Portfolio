@@ -1,0 +1,40 @@
+The dataset in DM.zip contains the following:
+1. 64 input geometries made of NURBS surface. Each input geometry contains 3 smesh
+files for three surfaces which are interacting in the analysis. these smesh files contain
+the position of the control points.
+2. Deformed geometry (at 80th time step and 140th time step of the analysis) for the
+64 geometries at 5 thickness and 3 pressure conditions.
+Each of the geometry is placed in folder run1-64. Each of the smesh file contains the
+following:
+• First 4 lines talk about the no. of components, the DOF, number of nodal points
+and something about the post-processing. You might find it easy to skip these 4
+lines while parsing through the file.
+• After the line 4, x,y and z coordinates of each node is specified. For simplicity, all
+the geometries are having 17 and 12 nodes in two directions of the surface.
+Each of the final geometry is named as result tstep temp pressure geometry, where tstep
+refers to the time step of the deformed geometry (80 and 140). temp refers to the 5
+temperatures (300K, 350K, 400K, 450K, 500K) and pressure refers to 3 pressure condi-
+tions (76mmHg, 80mmHg, 84mmHg) and geometry refers to the 64 geometries. Each file
+contains the final deformation of all the nodes of the three surfaces in the same order as
+the smesh files (skip line 1 which contains time step and analysis relevant details). Using
+the following data, perform the following tasks:
+1. Create two ordered pairs of (input,output) corresponding to two time steps. Here,
+input refers to tuple of (geometry, temperature, pressure). Since, each of the geome-
+try contains 17×12 nodes. Construct an array of shape 17×12×3 for each geometry.
+Shape of one element of the ordered pair may look something like ([[17,12,3],[1,],[1,]],
+[[17,12,3]]).
+2. Consider the input geometry and output geometry to be images with three channels
+(x, y and z channels instead of RGB channels). Since, the range of x, y and z channel
+are completely different, we would like to apply PCA whitening to normalize the
+data. Refer to links below for more information on how to whiten an image
+• http://ufldl.stanford.edu/tutorial/unsupervised/PCAWhitening/
+• http://ufldl.stanford.edu/tutorial/unsupervised/ExercisePCAWhitening/
+You would need to whiten all the input geometries, output geometries of both the
+time steps.
+3. Once, the output images are whitened, vectorize the output images of time-step 80
+and use that for plotting t-SNE. While plotting the t-SNE, you would need to create
+three plots to mark the labels of the data based on geometry, temperatures and
+pressures. Comment on the data distribution based on the t-SNE results in terms
+of geometry, temperatures and pressures. You could use any of the implementations
+available at https://lvdmaaten.github.io/tsne/.
+4
