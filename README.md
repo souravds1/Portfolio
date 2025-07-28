@@ -10,4 +10,5 @@ c) Micro & Nano Mechanics: Li-ion Battery Modeling (Doyle-Fuller-Newman Model)
 d) Computational Materials Science: Reactive MD Simulations for Methane Decomposition to Graphene & Hydrogen.
 e) Solid Modeling & GPU Computing: 2D Heat Transfer Simulation Using CUDA.
 f) Fatigue & Fracture Mechanics: Failure Crack Propagation in Orthopedic Bone Fractures.
+g)Machine Learning and Data Analytics: Exploring Variational Autoencoders for 2D Microstructure Generation
 This portfolio highlights my ability to integrate computational techniques with experimental research to solve real-world engineering challenges.
