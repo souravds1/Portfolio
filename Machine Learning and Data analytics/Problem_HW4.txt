@@ -1,0 +1,25 @@
+Point clouds are unstructured representations of 3D models that contain the (X, Y, Z)
+coordinates of points representing the surface of an object. In this assignment, you will
+train a deep learning model for object classification and segmentation using point clouds
+from the ScanObjectNN dataset, a real-world dataset of scanned 3D objects with 15
+categories (e.g., chair, table, desk). The dataset is available at https://github.com/
+hkust-vgd/ScanObjectNN. The task involves implementing and optimizing PointNet
+and PointNet++ frameworks using PyTorch or TensorFlow.
+1. Read the PointNet arXiv paper for a brief understanding of the implementation and
+the model. Link: https://arxiv.org/abs/1612.00593
+2. Read the PointNet++ arXiv paper, which builds on PointNet with hierarchical
+feature learning. Link: https://arxiv.org/abs/1706.02413
+3. Implement the PointNet framework using TensorFlow/PyTorch as given in the
+GitHub link: https://github.com/charlesq34/pointnet. Use the ScanObjectNN
+dataset for classification and part segmentation (Chair class only) tasks. Experiment
+with hyperparameters (e.g., learning rate, batch size, number of points sampled) to
+improve performance on the dataset.
+4. Repeat step 3 for the PointNet++ framework as given in the GitHub link: https:
+//github.com/charlesq34/pointnet2. Compare the performance of both models
+using metrics like classification accuracy and mean Intersection over Union (mIoU)
+for segmentation.
+5. In your presentation video, discuss the performance of both models with accuracy
+and mIoU plots, and show examples of correctly and incorrectly classified or seg-
+mented objects. Highlight challenges (e.g., handling noisy real-world scans) and
+suggest improvements, such as data augmentation or incorporating more robust
+feature extraction techniques.
