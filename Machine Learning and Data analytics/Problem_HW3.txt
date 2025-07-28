@@ -1,0 +1,42 @@
+Flow stress prediction at different strain, strain-rate, and temperatures is required for
+warm forming of sheet metals. In simulations, this flow stress is very important for ac-
+curate simulations. Specifically for materials like Austenitic Stainless Steel which shows
+a Dynamic Strain Ageing phenomenon at moderately high temperatures. In this regime,
+the behavior of materials is wavy and cannot be understood well with current physical
+models and phenomenological models. In this assignment, we would be trying to accu-
+rately predict flow stress based on deep learning models you have learnt till now. You
+will build a Long Short Term Memory (LSTM) network for this assignment.
+1. Data Loading: Load the data provided in the Excel Sheets in DM (1).zip. Different
+Excel sheets represent the behavior of the material at different strain rates and
+temperatures. Each Excel sheet contains the data about the variation of stress with
+strain. You may use, just the true stress vs. plastic strain data for the analysis.
+(You might have to preprocess the points by removing some points with zero stress
+and zero strain).
+2. Data preprocessing: Preprocess the data and create a list of strain, strain-rate,
+temperature and stress.
+3. Data split: Split the data pertaining into three parts (training, validation and test-
+ing). Two temperatures can be selected as test data. Choose a strategy to divide
+the data for training and validation (a typical strategy is to split the data into 60%
+training and 40 % testing, or 80-20). Justify the strategy you select. Also, use k-fold
+cross validation strategy for training.
+4. Naive Learning: Considering the strain, strain rate and temperature at every
+point, you need to predict the flow stress. This can be done by a naive neural
+network(fully connected deep neural network, no convolutions).
+5. LSTMs: build a LSTM network to predict flow stress for a given strain, strain-rate
+and temperature. Do a study on the parameter study on the roll-out of the LSTM
+required. Also, you might have to add zeros after the failure point to recognize the
+failure of the material.
+6. Deployment: The true stress and true strain results are obtained for a sheet metal.
+Tensile testing is performed on a small rectangular strip, 6cm in length and the jaws
+holding one end of the specimen and the other side is pulled by a displacement of
+x. For all the experiments in the data, displacement is such a way that the strain
+rate is constant through out the process. However, in forming, strain rate varies
+non-linearly. Example: your displacement could be represented as x = t3 2t2 +
+t. Then, predict the stress-strain curve for this profile of displacements. (Hint: you
+need to use the Hooke’s law and related components to convert the x to strains and
+strain rates and then eventually computing the stress strain curve for same)
+7. Presenting results: Compare the results you obtain for training, validation and
+testing data on the naive learning model and the LSTM. Visualize the stress-strain
+curves of the predicted (both) and the actual. Also, visualize the stress-strain curve
+for the deployment for both the learning cases.
+3
